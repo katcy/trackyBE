@@ -1,5 +1,5 @@
 let expressServer = require("express")();
-let httpServer = require("http").createServer(expressServer);
+let httpServer = require("http").Server(expressServer);
 let cors = require("cors");
 const io = require("socket.io")(httpServer);
 
